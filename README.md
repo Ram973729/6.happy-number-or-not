@@ -6,10 +6,10 @@ def happynum(n):
             a=n%10
             b=b+(a*a)
             n=n//10
-        if b==1:
+        if b==1 or b==7:
             return True
             break 
-        elif b==2 or b==3 or b==4 or b==5 or b==6 or b==7 or b==8 or b==9:
+        elif b==2 or b==3 or b==4 or b==5 or b==6 or b==8 or b==9:
             return False
             break
         n=b
